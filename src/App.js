@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CreatePostForm from './Components/CreatePost/CreatePostForm'
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts'
-
+import NavBar from './Components/NavBar/navBar'
 
 
 function App() {
@@ -15,8 +15,9 @@ function App() {
   return(
     <div className='contained-fluid'>
       <div className='row'>
-        <h3 style={{margin: '1em'}}>Social
-        <small className='text-muted'></small>Feed</h3>
+      <div className='border-box'>
+            <NavBar parentEntries={entries} />
+          </div>
         
           <div className='border-box'>
             <CreatePostForm addNewEntry={addNewEntry} />
