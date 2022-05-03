@@ -1,5 +1,6 @@
-
 const DisplayPosts = (props) => {
+
+
     return(
         <table className="table">   
             <tbody>
@@ -8,6 +9,12 @@ const DisplayPosts = (props) => {
                 <tr key={index}>
                     <td>{entry.name}</td>
                     <td>{entry.post}</td>
+                    <button className="like-button" onClick={onclick}>
+                        Like
+                    </button>
+                    <button className="dislike-button" onClick={onclick}>
+                        Dislike
+                    </button>
                 </tr>
                 );
                 })}
@@ -15,6 +22,5 @@ const DisplayPosts = (props) => {
         </table>
     );
 }
-// const green = "#00FF00";
-// const red = "FF0000";
+
 export default DisplayPosts;
