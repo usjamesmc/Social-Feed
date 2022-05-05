@@ -32,4 +32,4 @@ function App() {
 }
 export default App;
 
-// 7 commits, like and dislike buttons that toggle, 3 components, pleasing interface
+// 7 commits, like and dislike buttons that toggle, pleasing interface
