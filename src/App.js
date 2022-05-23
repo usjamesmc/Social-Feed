@@ -15,17 +15,15 @@ function App() {
   return(
     <div className='contained-fluid'>
       <div className='row'>
-      <div className='border-box'>
+          <div className='border-box'>
             <NavBar parentEntries={entries} />
           </div>
-        
           <div className='border-box'>
             <CreatePostForm addNewEntry={addNewEntry} />
           </div>
           <div className='border-box'>
             <DisplayPosts parentEntries={entries} />
-          </div>
-        
+          </div> 
       </div>
     </div>
   )
